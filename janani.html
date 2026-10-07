@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Janani Shree - Resume</title>
+
+    <style>
+
+        /* ==============================
+           A4 PAGE SETTINGS
+        ============================== */
+
+        @page {
+            size: A4;
+            margin: 0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #eee8f8;
+            color: #3f3747;
+        }
+
+        .resume {
+            width: 210mm;
+            min-height: 297mm;
+            margin: 10px auto;
+            padding: 13mm 16mm;
+            background: #fffaff;
+            box-shadow: 0 5px 25px rgba(120, 80, 120, 0.15);
+        }
+
+
+        /* ==============================
+           HEADER
+        ============================== */
+
+        header {
+            text-align: center;
+            padding-bottom: 10px;
+            margin-bottom: 12px;
+            border-bottom: 2px solid #d8b4d8;
+        }
+
+        header h1 {
+            font-size: 29px;
+            letter-spacing: 1px;
+            color: #7b4b78;
+            margin-bottom: 3px;
+        }
+
+        header h2 {
+            font-size: 13px;
+            font-weight: normal;
+            color: #8d7188;
+            margin-bottom: 7px;
+        }
+
+        .contact {
+            font-size: 9px;
+            color: #665968;
+        }
+
+        .contact a {
+            color: #9b5c8f;
+            text-decoration: none;
+            margin: 0 4px;
+        }
+
+
+        /* ==============================
+           SECTION HEADINGS
+        ============================== */
+
+        section {
+            margin-bottom: 10px;
+        }
+
+        .section-title {
+            font-size: 13px;
+            color: #8b557f;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 1px solid #ead5e7;
+            padding-bottom: 3px;
+            margin-bottom: 6px;
+        }
+
+
+        /* ==============================
+           TEXT
+        ============================== */
+
+        p,
+        li {
+            font-size: 9.5px;
+            line-height: 1.4;
+        }
+
+        .profile {
+            text-align: justify;
+            color: #514852;
+        }
+
+
+        /* ==============================
+           TWO COLUMNS
+        ============================== */
+
+        .two-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 28px;
+        }
+
+
+        /* ==============================
+           EDUCATION / EXPERIENCE
+        ============================== */
+
+        .item {
+            margin-bottom: 6px;
+        }
+
+        .item h3 {
+            font-size: 11px;
+            color: #403740;
+            margin-bottom: 2px;
+        }
+
+        .item h4 {
+            font-size: 9px;
+            color: #b06a9f;
+            margin-bottom: 2px;
+        }
+
+
+        /* ==============================
+           SKILLS
+        ============================== */
+
+        .skills {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4px 25px;
+        }
+
+        .skill {
+            font-size: 9.5px;
+            color: #514852;
+        }
+
+        .skill strong {
+            color: #8b557f;
+        }
+
+
+        /* ==============================
+           PROJECTS
+        ============================== */
+
+        .project {
+            margin-bottom: 7px;
+            padding-left: 8px;
+            border-left: 3px solid #d8a9c8;
+        }
+
+        .project h3 {
+            font-size: 11px;
+            color: #493e48;
+            margin-bottom: 1px;
+        }
+
+        .tech {
+            font-size: 8.5px;
+            color: #ad6799;
+            font-weight: bold;
+            margin-bottom: 2px;
+        }
+
+        .project p:last-child {
+            color: #514852;
+        }
+
+
+        /* ==============================
+           ACHIEVEMENTS
+        ============================== */
+
+        ul {
+            padding-left: 17px;
+        }
+
+        li {
+            margin-bottom: 2px;
+            color: #514852;
+        }
+
+
+        /* ==============================
+           FOOTER
+        ============================== */
+
+        footer {
+            text-align: center;
+            border-top: 1px solid #ead5e7;
+            padding-top: 6px;
+            margin-top: 8px;
+        }
+
+        footer p {
+            font-size: 8px;
+            color: #9b8495;
+        }
+
+
+        /* ==============================
+           PRINT SETTINGS
+        ============================== */
+
+        @media print {
+
+            body {
+                background: white;
+            }
+
+            .resume {
+                width: 210mm;
+                min-height: 297mm;
+                margin: 0;
+                padding: 13mm 16mm;
+                box-shadow: none;
+            }
+        }
+
+
+        /* ==============================
+           MOBILE
+        ============================== */
+
+        @media screen and (max-width: 700px) {
+
+            .resume {
+                width: 100%;
+                min-height: auto;
+                margin: 0;
+                padding: 25px;
+            }
+
+            .two-column {
+                grid-template-columns: 1fr;
+                gap: 10px;
+            }
+
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+<div class="resume">
+
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+
+        <h1>JANANI SHREE</h1>
+
+        <h2>
+            Software Developer | B.E. Computer Science Engineering Student
+        </h2>
+
+        <div class="contact">
+
+            Coimbatore, Tamil Nadu |
+
+            <a href="mailto:your@email.com">
+                jananikedhar20@gmail.com
+            </a>
+
+            |
+
+            +91 9345988160 |
+
+            <a href="https://www.linkedin.com/in/janani-shree-k/" target="_blank">
+                LinkedIn
+            </a>
+
+            |
+
+            <a href="https://github.com/jananikedhar20-star" target="_blank">
+                GitHub
+            </a>
+
+            |
+
+            <a href="https://leetcode.com" target="_blank">
+                LeetCode
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= PROFILE ================= -->
+
+    <section>
+
+        <h2 class="section-title">
+            Profile
+        </h2>
+
+        <p class="profile">
+
+            B.E. Computer Science and Engineering student with a CGPA of
+            9.21/10 and a strong interest in software development. Skilled
+            in Java, Python, web development, databases and Data Structures
+            & Algorithms. Passionate about building practical software
+            solutions and solving real-world problems through technology.
+
+        </p>
+
+    </section>
+
+
+    <!-- ================= EDUCATION + EXPERIENCE ================= -->
+
+    <section>
+
+        <div class="two-column">
+
+
+            <div>
+
+                <h2 class="section-title">
+                    Education
+                </h2>
+
+                <div class="item">
+
+                    <h3>
+                        B.E. Computer Science and Engineering
+                    </h3>
+
+                    <h4>
+                        2025 – 2029
+                    </h4>
+
+                    <p>
+                        CGPA: <strong>9.21 / 10</strong>
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div>
+
+                <h2 class="section-title">
+                    Experience
+                </h2>
+
+                <div class="item">
+
+                    <h3>
+                        Software Development Intern – Thiranex
+                    </h3>
+
+                    <h4>
+                        2026
+                    </h4>
+
+                    <p>
+                        Gained practical experience in software development,
+                        programming and application development.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= SKILLS ================= -->
+
+    <section>
+
+        <h2 class="section-title">
+            Technical Skills
+        </h2>
+
+        <div class="skills">
+
+            <p class="skill">
+                <strong>Languages:</strong>
+                Java, Python, JavaScript
+            </p>
+
+            <p class="skill">
+                <strong>Frontend:</strong>
+                HTML, CSS, React
+            </p>
+
+            <p class="skill">
+                <strong>Backend:</strong>
+                Spring Boot, REST APIs
+            </p>
+
+            <p class="skill">
+                <strong>Database:</strong>
+                SQL, MySQL, H2
+            </p>
+
+            <p class="skill">
+                <strong>Tools:</strong>
+                Git, GitHub
+            </p>
+
+            <p class="skill">
+                <strong>Core:</strong>
+                DSA, OOP, DBMS
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= PROJECTS ================= -->
+
+    <section>
+
+        <h2 class="section-title">
+            Projects
+        </h2>
+
+
+        <div class="project">
+
+            <h3>
+                SOA Guard AI
+            </h3>
+
+            <p class="tech">
+                React | Spring Boot | REST API | H2 | AI
+            </p>
+
+            <p>
+                Developed an AI-powered Statement of Account verification
+                system for logistics companies. Compares pricing database
+                records with agent SOA files and identifies mismatches,
+                missing records, duplicates and business-rule violations.
+            </p>
+
+        </div>
+
+
+        <div class="project">
+
+            <h3>
+                Student Learning Gap Detector
+            </h3>
+
+            <p class="tech">
+                Python | React | AI | Data Analysis
+            </p>
+
+            <p>
+                Developed a system that analyzes student assessment and
+                performance data to identify weak learning areas and provide
+                personalized learning recommendations.
+            </p>
+
+        </div>
+
+
+        <div class="project">
+
+            <h3>
+                Data Structures & Algorithms Practice
+            </h3>
+
+            <p class="tech">
+                Java | DSA | LeetCode
+            </p>
+
+            <p>
+                Practiced arrays, linked lists, stacks, queues, searching,
+                sorting and problem-solving using Java and LeetCode.
+            </p>
+
+        </div>
+
+
+        <div class="project">
+
+            <h3>
+                Personal Portfolio Website
+            </h3>
+
+            <p class="tech">
+                HTML | CSS | JavaScript
+            </p>
+
+            <p>
+                Created a responsive portfolio website to showcase technical
+                skills, projects, education and achievements.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= ACHIEVEMENTS ================= -->
+
+    <section>
+
+        <h2 class="section-title">
+            Achievements
+        </h2>
+
+        <ul>
+
+            <li>
+                Maintained a CGPA of <strong>9.21 / 10</strong>.
+            </li>
+
+            <li>
+                Selected for Software Development Internship at
+                <strong>Thiranex</strong>.
+            </li>
+
+            <li>
+                Actively practicing Data Structures and Algorithms using
+                Java and LeetCode.
+            </li>
+
+        </ul>
+
+    </section>
+
+
+    <!-- ================= CERTIFICATIONS ================= -->
+
+    <section>
+
+        <h2 class="section-title">
+            Certifications
+        </h2>
+
+        <ul>
+
+            <li>
+                Java Programming Certification
+            </li>
+
+            <li>
+                Python Programming Certification
+            </li>
+
+            <li>
+                Web Development Certification
+            </li>
+
+        </ul>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <p>
+            Janani Shree | B.E. Computer Science and Engineering
+        </p>
+
+    </footer>
+
+
+</div>
+
+</body>
+
+</html>
